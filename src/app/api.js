@@ -1,5 +1,5 @@
 
-const url = 'https://rent-a-car-backend-json.onrender.com';
+const url = 'https://rent-a-car-backend-json.onrender.com/';
 
 const api =  {
 
