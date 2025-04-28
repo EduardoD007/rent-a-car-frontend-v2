@@ -7,7 +7,9 @@ const api = {
   async buscaTodosCarros(params) {
 
     try {
-      const response = await fetch(`${url}carros${params}`);
+      const response = await fetch(`${url}carros${params}`{
+        mode: "cors"
+      });
       return response;
     } catch (error) {
       alert(`${error.message} - Erro ao buscar registros`);
