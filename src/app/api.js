@@ -7,9 +7,7 @@ const api = {
   async buscaTodosCarros(params) {
 
     try {
-      const response = await fetch(`${url}carros${params}`,{
-        mode: "cors"
-      });
+      const response = await fetch(`${url}carros${params}`);
       return response;
     } catch (error) {
       alert(`${error.message} - Erro ao buscar registros`);
@@ -18,9 +16,7 @@ const api = {
 
   async buscaCarroPorId(id) {
     try {
-      const response = await fetch(`${url}carros/${id}`, {
-        mode: 'cors'
-      })
+      const response = await fetch(`${url}carros/${id}`)
       return response
     } catch (error) {
       alert(`${error.message} - Erro ao buscar registro por id`)
@@ -29,9 +25,7 @@ const api = {
 
   async buscaTodosClientes(params) {
     try {
-      const response = await fetch(`${url}clientes${params}`, {
-        mode: 'cors'
-      })
+      const response = await fetch(`${url}clientes${params}`)
       return response;
     } catch (error) {
       alert(`${error.message} - Erro ao buscar clientes`)
@@ -40,9 +34,7 @@ const api = {
 
   async buscaClientePorId(id) {
     try {
-      const response = await fetch(`${url}clientes/${id}`, {
-        mode: 'cors'
-      })
+      const response = await fetch(`${url}clientes/${id}`)
       return response
     } catch (error) {
       alert(`${error.message} - Erro ao buscar registro por id`)
@@ -51,9 +43,7 @@ const api = {
 
   async buscaTodosPedidos(params) {
     try {
-      const response = await fetch(`${url}pedidos${params}`, {
-        mode: 'cors'
-      })
+      const response = await fetch(`${url}pedidos${params}`)
       return response;
     } catch (error) {
       alert(`${error.message} - Erro ao buscar pedidos`)
@@ -64,7 +54,6 @@ const api = {
     try {
       const response = await fetch(`${url}clientes/${clienteId}/pedidos/${carroId}`,
         {
-          mode: 'cors',
           method: 'POST',
           body: JSON.stringify(pedido),
           headers: {
@@ -83,7 +72,6 @@ const api = {
     try {
       await fetch(`${url}carros/${carroId}`,
         {
-          mode: 'cors',
           method: 'PATCH',
           body: JSON.stringify(atualizacao),
           headers: {
@@ -100,7 +88,6 @@ const api = {
     try {
       await fetch(`${url}pedidos/${pedidoId}/${carroId}`,
         {
-          mode: 'cors',
           method: 'DELETE',
         }
       )
