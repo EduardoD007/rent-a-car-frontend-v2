@@ -1,5 +1,5 @@
 
-const url = 'rent-a-car-backend-json.vercel.app/';
+const url = 'https://rent-a-car-backend-json.vercel.app/';
 
 const api =  {
 
