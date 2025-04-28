@@ -88,7 +88,6 @@ const api = {
     try {
       await fetch(`${url}pedidos/${pedidoId}/${carroId}`,
         {
-          mode: "cors",
           method: 'DELETE',
           headers: {
             "Content-type": "application/json"
