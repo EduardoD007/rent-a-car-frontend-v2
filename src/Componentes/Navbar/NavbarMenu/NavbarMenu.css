@@ -1,0 +1,20 @@
+.menu {
+  width: fit-content;
+  margin-left: 5px;
+  margin-right: 5px;
+  align-content: center;
+  padding: 10px;
+  color: white;
+  font-size: 17px;
+}
+
+.menu:hover {
+  background-color: rgb(206, 61, 61);
+  width: fit-content;
+  margin-left: 5px;
+  margin-right: 5px;
+  align-content: center;
+  padding: 10px;
+  color: white;
+  font-size: 18px;
+}

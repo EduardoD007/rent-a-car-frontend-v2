@@ -1,0 +1,20 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #5A68BF;
+  text-align: center;
+  height: fit-content
+
+}
+
+.footer h1 {
+  margin: 10px 0px 0px 0px ;
+  color: white;
+  font-size: 20px;
+}
+
+.footer h2 {
+  margin: 8px 0px 20px 0px ;
+  color: white;
+  font-size: 16px;
+}

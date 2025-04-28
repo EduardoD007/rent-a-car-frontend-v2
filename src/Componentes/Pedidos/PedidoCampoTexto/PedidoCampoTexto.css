@@ -1,0 +1,25 @@
+.campo-texto {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  font-size: 20px;
+  text-shadow: 3px 3px 5px rgba(40, 8, 182, 0.8);
+  text-align: left;
+}
+
+.campo-texto label {
+  font-size: 20px;
+  text-shadow: 3px 3px 5px rgba(40, 8, 182, 0.8);
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.campo-texto input {
+  background-color: rgb(235, 238, 247);
+  font-size: 16px;
+  padding: 5px;
+  width: 300px;
+  box-shadow: 6px 5px 8px rgba(20, 20, 20, 0.2);
+  text-align: center;
+  border: none;
+}

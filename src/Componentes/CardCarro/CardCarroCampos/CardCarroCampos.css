@@ -1,0 +1,98 @@
+.card-list-container {
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  width: 100%;
+  flex-direction: row;
+  column-gap: 20px;
+  row-gap: 20px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.card-form {
+  background-color: #F2F2FF;
+  border-radius: 8px;
+  padding-inline-start: 0px;
+  text-align: center;
+  width: 390px;
+  height: 340px;
+  box-shadow: 6px 5px 10px rgba(20, 20, 20, 0.4);
+  list-style-type: none;
+  padding-inline-start: none;
+ 
+}
+
+.card-campos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-campos--titulo {
+  background-color: #5A68BF;
+  color: white;
+  margin-top: 10px;
+  width: 100%;
+  height: 22px;
+}
+
+.card-campos section {
+  display: flex;
+  width: 94%;
+  justify-content:center;
+  column-gap: 7px;
+  height: 160px;
+}
+
+.card-campos--meio{
+  display: flex;
+  background-color: #DDDEF4;
+  border-radius: 10px;
+  color: rgb(27, 26, 26);
+  margin-top: 10px;
+  width: 49%;
+}
+
+.card-campos--meio img {
+  width: 170px ;
+  height: 130px;
+}
+
+.card-campos--meio-textos {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 12px;
+  background-color: #DDDEF4;
+  border-radius: 10px;
+  color: rgb(27, 26, 26);
+  margin-top: 10px;
+  width: 49%;
+  box-sizing: border-box;
+}
+
+.card-campos--meio-textos--container {
+  display: flex;
+  column-gap: 5px;
+  margin-bottom: 7px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.card-campos--final {
+  background-color: #DDDEF4 ;
+  margin-top: 10px;
+  width: 94%;
+  height: 125px;
+  border-radius: 10px;
+}
+
+.card-campos--final-diaria {
+  background-color: rgb(25, 201, 201);
+  text-align: center;
+  padding-top: 3px;
+  margin-top: 10px;
+  height: 25px;
+
+}

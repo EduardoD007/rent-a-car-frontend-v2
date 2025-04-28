@@ -1,0 +1,10 @@
+.pedido-label {
+  background-color: rgb(140, 162, 233);
+  color:rgb(11, 25, 151);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 4px 10px 4px 10px ;
+  border-radius: 4px;
+  box-shadow: 6px 5px 8px rgba(20, 20, 20, 0.14);
+  text-align: left;
+}

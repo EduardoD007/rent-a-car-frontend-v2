@@ -1,0 +1,12 @@
+.busca-form-selecionar {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-right: 1%;
+  background-color: #5A68BF;
+  width: 100%;
+  height:fit-content;
+  box-shadow: 6px 5px 10px rgba(20, 20, 20, 0.4);
+}

@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-
+import NavbarForm from './Componentes/Navbar/NavbarForm'
+import Header from './Componentes/Header/'
+import Conteudo from './Componentes/Conteudo/';
+import { useState } from 'react';
+import Footer from './Componentes/Footer/index.js';
 function App() {
+  const [listaBusca,setListaBusca] = useState('')
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="header">
+        <NavbarForm/>
+        <Header/>
       </header>
+      <main>
+        <Conteudo
+          lista = {listaBusca}
+          aoReceberStringBusca = {stringBusca => setListaBusca(stringBusca)}
+          />
+      </main>
+      <footer>
+        <Footer 
+          texto1 = 'Rent A Car'
+          texto2 = '2025 - Todos direitos reservados'
+        />
+      </footer>
     </div>
   );
 }
 
-export default App;
+export default App
