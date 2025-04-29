@@ -18,7 +18,7 @@ const ListaCardCarrosAlugados = (props) => {
     const data = pegaPedido(event.target.id)
     const pedidoId = data.id
     await api.atualizarCarro({status:"Disponível"},event.target.id)
-    setTimeout(await api.exlcuirPedido( pedidoId, event.target.id),2000)
+    setTimeout(await api.exlcuirPedido( pedidoId, event.target.id),5000)
     
   }
 
