@@ -14,6 +14,7 @@ const ListaCardCarrosAlugados = (props) => {
   const[clientes, setClientes] = useState([])
 
   const aoEnviarForm = async (event) => {
+    event.preventDefault()
     window.scroll(0, 0)
     const data = pegaPedido(event.target.id)
     const pedidoId = data.id
