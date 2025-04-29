@@ -18,6 +18,7 @@ const ListaCardCarrosAlugados = (props) => {
     const data = pegaPedido(event.target.id)
     const pedidoId = data.id
     api.exlcuirPedido( pedidoId, event.target.id)
+    api.atualizarCarro({status:"Disponível"},event.target.id)
   }
 
   const pegaClientes = async (params) => {
