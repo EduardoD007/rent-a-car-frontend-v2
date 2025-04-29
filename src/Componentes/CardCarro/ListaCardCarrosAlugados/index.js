@@ -17,11 +17,9 @@ const ListaCardCarrosAlugados = (props) => {
     window.scroll(0, 0)
     const data = pegaPedido(event.target.id)
     const pedidoId = data.id
-    const data2 = await api.exlcuirPedido( pedidoId, event.target.id)
-    const data3 = await api.atualizarCarro({status:"Disponível"},event.target.id)
+    await api.exlcuirPedido( pedidoId, event.target.id)
+    await api.atualizarCarro({status:"Disponível"},event.target.id)
   }
-
-
 
   const pegaClientes = async (params) => {
     const response = await api.buscaTodosClientes(params)
