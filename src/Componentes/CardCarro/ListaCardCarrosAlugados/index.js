@@ -13,12 +13,12 @@ const ListaCardCarrosAlugados = (props) => {
   let dataPedido;
   const[clientes, setClientes] = useState([])
 
-  const aoEnviarForm = (event) => {
+  const aoEnviarForm = async (event) => {
     window.scroll(0, 0)
     const data = pegaPedido(event.target.id)
     const pedidoId = data.id
-    api.exlcuirPedido( pedidoId, event.target.id)
-    api.atualizarCarro({status:"Disponível"},event.target.id)
+    await api.exlcuirPedido( pedidoId, event.target.id)
+    await api.atualizarCarro({status:"Disponível"},event.target.id)
   }
 
   const pegaClientes = async (params) => {
