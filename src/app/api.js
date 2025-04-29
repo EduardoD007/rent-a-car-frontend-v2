@@ -7,7 +7,11 @@ const api = {
   async buscaTodosCarros(params) {
 
     try {
-      const response = await fetch(`${url}carros${params}`);
+      const response = await fetch(`${url}carros${params}`, 
+        {
+          headers: {"Access-Control-Allow-Origin": 'https://rent-a-car-backend-json.onrender.com/'}
+        }
+      );
       return response;
     } catch (error) {
       alert(`${error.message} - Erro ao buscar registros`);
