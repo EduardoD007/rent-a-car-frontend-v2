@@ -38,9 +38,7 @@ const ListaCardCarrosAlugados = (props) => {
   }
 
   useEffect(() => {
-    return () => {
-      pegaClientes(" ")
-    };
+    pegaClientes(" ")
   }, [])
 
   return (
