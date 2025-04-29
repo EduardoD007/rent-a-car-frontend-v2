@@ -7,11 +7,7 @@ const api = {
   async buscaTodosCarros(params) {
 
     try {
-      const response = await fetch(`${url}carros${params}`, 
-        {
-          headers: {"Access-Control-Allow-Origin": 'https://rent-a-car-backend-json.onrender.com/'}
-        }
-      );
+      const response = await fetch(`${url}carros${params}`);
       return response;
     } catch (error) {
       alert(`${error.message} - Erro ao buscar registros`);
@@ -92,10 +88,7 @@ const api = {
     try {
       await fetch(`${url}pedidos/${pedidoId}/${carroId}`,
         {
-          method: 'DELETE',
-          headers: {
-            "Content-type": "application/json"
-          }
+          method: 'DELETE'
         }
       )
       alert(`Pedido nº ${pedidoId} encerrado com sucesso - Carro disponível para locação`)
