@@ -34,7 +34,8 @@ const PedidoForm = (props) => {
 
   const pegarCarroPorId = async (id) => {
     const response = await api.buscaCarroPorId(id)
-    const data = await (response.json())
+    const data = await response.json()
+    console.log(data)
     const dataObjeto = data.find(e => e,[0,data] )
     setCarro(dataObjeto)
   }
@@ -217,6 +218,7 @@ const PedidoForm = (props) => {
           />
           <BotaoPedidoCancelar
             texto='Cancelar'
+            reload = {() => document.location.reload()}
           />
         </div>
       </div>
